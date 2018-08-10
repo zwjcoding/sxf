@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pos.cn.sxf.dao.OrderDetailDao" >
+    
+    <resultMap id="orderDetailMapper" type="com.pos.cn.sxf.vo.OrderDetail">
+            <id column="order_detail_id" property="orderDetailId"></id>
+            <result column="product_id" property="productId"></result>
+            <result column="count" property="count"></result>
+            <result column="model_id" property="modelId"></result>
+            <result column="order_id" property="orderId"></result>
+    </resultMap>
+
+    <insert id="insertOrderDetails"  parameterType="java.util.List" >
+              insert into order_detail(order_detail_id,product_id,product_count,model_id,order_id)
+              VALUES
+              <foreach collection ="list" item="orderDetail" index= "index" separator =",">
+                  (
+                      #{orderDetail.orderDetailId},#{orderDetail.productId},#{orderDetail.count},#{orderDetail.modelId},#{orderDetail.orderId}
+                  )
+              </foreach>
+
+    </insert>
+</mapper>

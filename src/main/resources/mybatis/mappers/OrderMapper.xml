@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pos.cn.sxf.dao.OrderDao" >
+
+            <resultMap id="orderResultMap" type="com.pos.cn.sxf.vo.OrderVO">
+                    <id  column="order_id"  property="orderId"></id>
+                    <result column="order_created_time" property="createOrderTime"></result>
+                    <result column="customer_id" property="customerId"></result>
+            </resultMap>
+
+            <!-- 插入订单ID  -->
+            <insert id="insertOrder" >
+                  insert into orders(order_id,order_created_time,customer_id)
+                  values( #{orderId},#{createOrderTime},#{customerId})
+            </insert>
+
+
+
+</mapper>

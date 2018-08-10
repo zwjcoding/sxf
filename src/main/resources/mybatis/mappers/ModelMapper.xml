@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pos.cn.sxf.dao.ModelDao" >
+    
+    <resultMap id="modelResultMap" type="com.pos.cn.sxf.vo.ModelVO">
+            <id column="model_id" property="modelId"></id>
+            <result column="model_name" property="modelName"></result>
+            <result column="product_id" property="productId"></result>
+    </resultMap>
+
+
+    <select id="queryModelByModelId" resultType="com.pos.cn.sxf.vo.ModelVO">
+            select model_id,model_name,product_id from model where  model_id = #{id}
+    </select>
+
+    <select id="queryModelByProductId" resultMap="modelResultMap">
+            select model_id,model_name,product_id from model where product_id = #{id}
+    </select>
+
+
+    
+
+
+</mapper>
