@@ -210,7 +210,7 @@
                 </a>
             </li>
             <li class="sidebar-nav-link">
-                <a href="tables.html">
+                <a href="tables.jsp">
                     <i class="am-icon-table sidebar-nav-link-logo"></i> 表格
                 </a>
             </li>

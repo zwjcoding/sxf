@@ -209,7 +209,7 @@
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="tables.html">
+                    <a href="tables.jsp">
                         <i class="am-icon-table sidebar-nav-link-logo"></i>订单列表
                     </a>
                 </li>
