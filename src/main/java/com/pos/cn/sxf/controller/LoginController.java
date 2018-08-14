@@ -16,10 +16,6 @@ public class LoginController {
 
 
 
-        @RequestMapping(value = "/addOrderIndex",method = RequestMethod.GET)
-        public String  addOrderIndex(){
-            return "addOrderThree";
-        }
 
 
 
