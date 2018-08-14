@@ -11,8 +11,15 @@ public class LoginController {
 
        @RequestMapping(value = "/login",method = RequestMethod.GET)
        public  String  loginUser(){
-            return "404";
+            return "abc";
        }
+
+
+
+        @RequestMapping(value = "/addOrderIndex",method = RequestMethod.GET)
+        public String  addOrderIndex(){
+            return "addOrderThree";
+        }
 
 
 
