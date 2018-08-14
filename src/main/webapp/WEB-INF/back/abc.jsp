@@ -4,6 +4,7 @@ Date: 17/1/12
 Time: 下午1:32
 To change this template use File | Settings | File Templates.
 --%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html class="normal ">
 <head>
@@ -426,32 +427,32 @@ To change this template use File | Settings | File Templates.
             <div class="download-view-addon-3"></div>
             <div class="download-view-addon-4"></div>
             <div class="download-cover" id="downloadCover" style="background-image: url('https://os.alipayobjects.com/rmsportal/hNfINSQHpUoLRly.png');">
-            <div class="download-cover-logo" id="downloadCoverLogo"></div>
-            <div class="download-cover-slogan" id="downloadCoverSlogan"></div>
-            <div class="download-cover-picture" id="downloadCoverPicture">
-                <div class="download-cover-picture-1"></div>
-                <div class="download-cover-picture-2"></div>
-                <div class="download-cover-picture-3"></div>
-                <div class="download-cover-picture-4"></div>
+                <div class="download-cover-logo" id="downloadCoverLogo"></div>
+                <div class="download-cover-slogan" id="downloadCoverSlogan"></div>
+                <div class="download-cover-picture" id="downloadCoverPicture">
+                    <div class="download-cover-picture-1"></div>
+                    <div class="download-cover-picture-2"></div>
+                    <div class="download-cover-picture-3"></div>
+                    <div class="download-cover-picture-4"></div>
+                </div>
             </div>
-        </div>
-        <div id="J_downloadInteraction" class="download-interaction download-interaction-button">
-            <div class="inner-interaction">
-                <p class="download-opening">正在打开支付宝<span class="download-opening-1">.</span><span class="download-opening-2">.</span><span class="download-opening-3">.</span></p>
+            <div id="J_downloadInteraction" class="download-interaction download-interaction-button">
+                <div class="inner-interaction">
+                    <p class="download-opening">正在打开支付宝<span class="download-opening-1">.</span><span class="download-opening-2">.</span><span class="download-opening-3">.</span></p>
+                </div>
             </div>
-        </div>
 
-        <script>
-            document.getElementById('J_downloadBtn').onclick = function () {
-                var ifr = document.createElement('iframe');
-                ifr.src = 'itms-apps://itunes.apple.com/app/zhi-fu-bao/id333206289?mt=8';
-                ifr.style.display = 'none';
-                document.body.appendChild(ifr);
-                location.href = 'itms-apps://itunes.apple.com/app/zhi-fu-bao/id333206289?mt=8';
-            };
-        </script>
+            <script>
+                document.getElementById('J_downloadBtn').onclick = function () {
+                    var ifr = document.createElement('iframe');
+                    ifr.src = 'itms-apps://itunes.apple.com/app/zhi-fu-bao/id333206289?mt=8';
+                    ifr.style.display = 'none';
+                    document.body.appendChild(ifr);
+                    location.href = 'itms-apps://itunes.apple.com/app/zhi-fu-bao/id333206289?mt=8';
+                };
+            </script>
+        </div>
     </div>
-</div>
 </div>
 
 <div class="base-info">

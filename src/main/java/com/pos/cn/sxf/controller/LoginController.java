@@ -9,10 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class LoginController {
 
 
-    @RequestMapping(value = "/login",method = RequestMethod.GET)
+       @RequestMapping(value = "/login",method = RequestMethod.GET)
        public  String  loginUser(){
-                 return "tables";
+            return "404";
        }
+
 
 
 

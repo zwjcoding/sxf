@@ -18,4 +18,6 @@ public interface CommunityDao {
 
      void  addCommunity(CommunityVO communityVO);
 
+
+
 }

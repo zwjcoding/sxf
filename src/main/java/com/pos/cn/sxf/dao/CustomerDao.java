@@ -50,4 +50,6 @@ public interface CustomerDao {
      */
     public  void deleteOrderDetilById(@Param("orderDetailId") String orderDetailId);
 
+
+
 }
