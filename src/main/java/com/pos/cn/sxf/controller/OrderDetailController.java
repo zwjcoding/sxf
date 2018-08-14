@@ -42,10 +42,7 @@ public class OrderDetailController {
             return "addOrderThree";
     }
 
-    @RequestMapping(value = "/addOrderIndex1",method = RequestMethod.GET)
-    public String  addOrderIndex1(){
-        return "abc";
-    }
+
 
     @RequestMapping("/addOrderDetails")
     @ResponseBody
